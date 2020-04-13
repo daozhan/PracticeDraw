@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">@color/theme_color</color>
+    <color name="colorPrimaryDark">@color/theme_color</color>
+    <color name="colorAccent">@color/theme_color</color>
+
+    <!--主题色-->
+    <color name="theme_color">#3AC1AE</color>
+    <!--透明-->
+    <color name="trans">#00000000</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+    <color name="black1">#333333</color>
+    <color name="black2">#555555</color>
+    <color name="black3">#585553</color>
+    <!--白色-->
+    <color name="white">#FFFFFF</color>
+    <!--红色-->
+    <color name="red">#FF0000</color>
+    <color name="red1">#FB756E</color>
+    <color name="red2">#FFF8F8</color>
+    <!--绿色-->
+    <color name="green">#00FF00</color>
+    <color name="green1">#3AC1AE</color>
+    <color name="green2">#58C9B9</color>
+    <color name="green3">#413ac1ae</color>
+    <color name="green4">#45CE96</color>
+    <!--橙色-->
+    <color name="orange">#FFAF1B</color>
+    <!--黄色-->
+    <color name="yellow">#EDC539</color>
+    <color name="yellow2">#D6A56A</color>
+    <!--蓝色-->
+    <color name="blue">#0000FF</color>
+    <color name="blue2">#3B4D99</color>
+    <color name="blue3">#6380FF</color>
+    <color name="blue4">#93B9D8</color>
+    <!--浅黑色-->
+    <color name="light_black">#454545</color>
+    <!--灰色-->
+    <color name="gray">#666666</color>
+    <color name="gray1">#999999</color>
+    <color name="gray2">#CCCCCC</color>
+    <color name="gray3">#DDDDDD</color>
+    <color name="gray4">#F5F5F5</color>
+    <color name="gray5">#F3F3F3</color>
+    <color name="gray6">#EEEEEE</color>
+    <color name="gray7">#AEAEAE</color>
+    <color name="gray8">#F8F8F8</color>
+    <color name="gray9">#B1B1B1</color>
+    <color name="gray10">#DBDBDB</color>
+    <color name="gray11">#E4E4E4</color>
+    <color name="gray12">#BFC9CF</color>
+    <color name="gray13">#D7D7D7</color>
+    <color name="gray14">#F4F4F4</color>
+    <color name="gray15">#F2F2F2</color>
+    <color name="gray16">#DEDEDE</color>
+    <color name="gray17">#B2B2B2</color>
+    <!--布局灰色背景-->
+    // #EEEEEE #EFEFEF #F0F0F0
+    <color name="layout_gray_bg">#EFEFEF</color>
+    <!--弹出框透明黑色背景-->
+    <color name="dialog_black_bg_color">#77000000</color>
+    <!--按下的背景颜色-->
+    <color name="selector_pressed_bg_color">#EBEBEB</color>
+
+</resources>

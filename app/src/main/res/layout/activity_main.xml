@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#FFFFFF">
+
+    <com.dao.practicedraw.widget.tablayout.TabLayout
+            android:id="@+id/act_main_tb"
+            style="@style/style_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_45dp"
+            android:background="@color/white"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/green1"
+            app:tabSelectedTextColor="@color/green1"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="@color/gray"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="10dp"
+            app:tabPaddingStart="10dp"/>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/act_main_vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+</LinearLayout>
