@@ -19,6 +19,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         // 画颜色
         mFragments.add(DrawColorFragment())
+        // getTextBounds
+        addItem("getTextBounds", DrawGetTextBoundsFragment())
+        // getFillPath
+        addItem("drawTextOnPath", DrawTextOnPathFragment())
+        // getFillPath
+        addItem("getFillPath", DrawGetFillPathFragment())
+        // setStroke
+        addItem("setShadowLayer", DrawSetShadowLayerFragment())
+        // setStroke
+        addItem("setPathEffect", DrawSetPathEffectFragment())
+        // setStroke
+        addItem("setStroke", DrawSetStrokeFragment())
+        // setXfermode
+        addItem("setXfermode", DrawSetXfermodeFragment())
+        // setColorFilter
+        addItem("setColorFilter", DrawSetColorFilterFragment())
         // BitmapShader
         addItem("BitmapShader", DrawBitmapShaderFragment())
         // 设置渐变颜色

@@ -1,9 +1,7 @@
 package com.dao.practicedraw.widget
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.*
-import android.graphics.BitmapFactory.decodeResource
 import android.util.AttributeSet
 import android.view.View
 import com.dao.practicedraw.R
@@ -13,7 +11,7 @@ import com.dao.practicedraw.R
  * @author daoz
  * @date :2020/3/30 14:09
  */
-class DrawBitmapShaderView : View {
+class DrawSetXfermodeView : View{
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
@@ -27,7 +25,6 @@ class DrawBitmapShaderView : View {
     // 初始化Paint对象
     var paint: Paint = Paint()
 
-    @SuppressLint("DrawAllocation")
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
         // 颜色
@@ -41,20 +38,19 @@ class DrawBitmapShaderView : View {
         paint.strokeWidth = 10f
         // 抗锯齿 其他写法 Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.isAntiAlias = true
-        // 第一个 Shader：头像的 Bitmap
-        val bitmap = decodeResource(resources, R.mipmap.batman)
-        val shader = BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP)
-        // 第二个 Shader：从上到下的线性渐变（由透明到黑色）
-        val bitmap2 = decodeResource(resources, R.mipmap.batman_logo)
-        val shader2 = BitmapShader(bitmap2, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP)
-//        paint.shader = shader
-//        canvas?.drawCircle(135f, 120f, 100f, paint)
-        // 结合使用
-        val shader3 = ComposeShader(shader, shader2, PorterDuff.Mode.DST_IN)
-        paint.shader = shader3
-        canvas?.drawCircle(130f, 120f, 100f, paint)
+        val xfermode = PorterDuffXfermode(PorterDuff.Mode.DST_IN)
 
-//        canvas?.drawCircle(235f, 220f, 100f, paint)
+        val saved = canvas?.saveLayer(null, null, Canvas.ALL_SAVE_FLAG)
+
+        val bitmap = BitmapFactory.decodeResource(resources, R.mipmap.batman)
+        val bitmap2 = BitmapFactory.decodeResource(resources, R.mipmap.batman_logo)
+        canvas?.drawBitmap(bitmap, 0f, 0f, paint)
+        paint.xfermode = xfermode
+        canvas?.drawBitmap(bitmap2, 0f, 0f, paint)
+        paint.xfermode = null
+
+        canvas?.restoreToCount(saved!!);
+
 
     }
 }
