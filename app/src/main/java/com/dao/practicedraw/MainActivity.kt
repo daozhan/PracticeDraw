@@ -19,6 +19,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         // 画颜色
         mFragments.add(DrawColorFragment())
+        // 绘制子 View 的方法
+        addItem("属性动画", PropertyAnimationFragment())
+        // 绘制子 View 的方法
+        addItem("绘制子View的方法", SpottedLinearLayoutFragment())
+        // 绘制顺序
+        addItem("绘制顺序", DrawDrawingOrderFragment())
+        // getTextBounds
+        addItem("翻页效果", DrawTurnPageFragment())
+        // getTextBounds
+        addItem("Camera", DrawCameraFragment())
+        // getTextBounds
+        addItem("几何变换", DrawTranslateFragment())
+        // getTextBounds
+        addItem("范围裁切 clipRect", DrawClipRectFragment())
+        // getTextBounds
+        addItem("光标相关", DrawGetRunAdvanceFragment())
         // getTextBounds
         addItem("getTextBounds", DrawGetTextBoundsFragment())
         // getFillPath

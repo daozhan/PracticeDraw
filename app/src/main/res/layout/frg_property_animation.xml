@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:src="@mipmap/batman"
+            android:layout_centerInParent="true"/>
+
+    <Button android:id="@+id/start"
+            android:layout_width="@dimen/space_100dp" android:layout_height="@dimen/space_45dp"
+            android:text="@string/start"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"/>
+
+    <com.dao.practicedraw.widget.SportsView
+            android:id="@+id/sportsview"
+            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

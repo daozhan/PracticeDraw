@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dao.practicedraw.widget.SpottedLinearLayoutView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="#88F5F5F5"
+        android:orientation="vertical">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/batman"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_45dp"/>
+</com.dao.practicedraw.widget.SpottedLinearLayoutView>
