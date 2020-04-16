@@ -9,6 +9,7 @@ import android.view.View
  */
 
 fun View.dip2Px(dpValue: Float): Float {
-    val scale = this.context.resources.displayMetrics.density
-    return dpValue * scale + 0.5f
+//    val scale = this.context.resources.displayMetrics.density
+//    return dpValue * scale
+    return Math.round(resources.displayMetrics.density * dpValue).toFloat();
 }

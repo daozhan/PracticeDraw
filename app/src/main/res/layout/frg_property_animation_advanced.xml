@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.dao.practicedraw.widget.SphereView
+            android:id="@+id/sphereview"
+            android:layout_width="@dimen/space_100dp"
+            android:layout_height="@dimen/space_100dp"
+            android:layout_centerHorizontal="true"/>
+
+
+    <com.dao.practicedraw.widget.SphereView
+            android:id="@+id/sphereview2"
+            android:layout_width="@dimen/space_100dp" android:layout_height="@dimen/space_100dp"
+            android:layout_below="@+id/sphereview"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:alpha="0"
+    android:layout_centerHorizontal="true"/>
+
+    <com.dao.practicedraw.widget.SphereView
+            android:id="@+id/sphereview3"
+            android:layout_width="@dimen/space_100dp" android:layout_height="@dimen/space_100dp"
+            android:layout_below="@+id/sphereview2"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:alpha="0"/>
+
+    <com.dao.practicedraw.widget.SportsView
+            android:id="@+id/sportsview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sphereview3"
+    />
+
+    <Button android:id="@+id/start"
+            android:layout_width="@dimen/space_100dp" android:layout_height="@dimen/space_45dp"
+            android:text="@string/start"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

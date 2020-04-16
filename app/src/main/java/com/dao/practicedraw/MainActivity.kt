@@ -19,7 +19,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         // 画颜色
         mFragments.add(DrawColorFragment())
-        // 绘制子 View 的方法
+        // 属性动画-进阶
+        addItem("属性动画-进阶", PropertyAnimationAdvancedFragment())
+        // 属性动画
         addItem("属性动画", PropertyAnimationFragment())
         // 绘制子 View 的方法
         addItem("绘制子View的方法", SpottedLinearLayoutFragment())
@@ -29,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         addItem("翻页效果", DrawTurnPageFragment())
         // getTextBounds
         addItem("Camera", DrawCameraFragment())
+        val 正方形 = "100"
         // getTextBounds
         addItem("几何变换", DrawTranslateFragment())
         // getTextBounds
