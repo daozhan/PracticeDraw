@@ -3,6 +3,7 @@ package com.dao.practicedraw
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.text.method.Touch
 import com.dao.practicedraw.adapter.BaseFragmentAdapter
 import com.dao.practicedraw.fragment.*
 import com.dao.practicedraw.widget.tablayout.TabLayout
@@ -19,6 +20,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         // 画颜色
         mFragments.add(DrawColorFragment())
+        // 点赞效果
+        addItem("点赞效果", LikeImageFragment())
+        // 触摸反馈
+        addItem("触摸反馈", TouchFeedbackFragment())
+        // 属性动画-进阶
+        addItem("自定义正方形ImageView", SquareImageViewFragment())
         // 属性动画-进阶
         addItem("属性动画-进阶", PropertyAnimationAdvancedFragment())
         // 属性动画

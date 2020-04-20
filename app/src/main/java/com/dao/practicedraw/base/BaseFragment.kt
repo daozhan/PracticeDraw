@@ -57,4 +57,10 @@ abstract class BaseFragment : Fragment() , AnkoLogger {
     fun myToast(msg:String){
         context?.runOnUiThread { toast(msg) }
     }
+
+    open fun dip2Px(dpValue: Float): Float {
+//    val scale = this.context.resources.displayMetrics.density
+//    return dpValue * scale
+        return Math.round(resources.displayMetrics.density * dpValue).toFloat();
+    }
 }
