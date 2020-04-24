@@ -5,6 +5,8 @@ import android.widget.SeekBar
 import com.dao.practicedraw.R
 import com.dao.practicedraw.base.BaseFragment
 import com.dao.practicedraw.utils.ScreenUtils
+import kotlinx.android.synthetic.main.frg_text_loading.*
+import org.jetbrains.anko.internals.AnkoInternals.addView
 
 
 /**
@@ -12,26 +14,18 @@ import com.dao.practicedraw.utils.ScreenUtils
  * @author daoz
  * @date :2020/3/30 10:37
  */
-class LikeImageFragment : BaseFragment(), SeekBar.OnSeekBarChangeListener {
-
-    override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-    }
-
-    override fun onStartTrackingTouch(seekBar: SeekBar?) {
-    }
-
-    override fun onStopTrackingTouch(seekBar: SeekBar?) {
-    }
+class TextLoadingFragment : BaseFragment() {
 
     override fun initView(): View? {
-        return View.inflate(context, R.layout.frg_like_image, null)
+        return View.inflate(context, R.layout.frg_text_loading, null)
     }
 
     override fun initListener() {
         super.initListener()
+        start.setOnClickListener {
+            text_loading_view.startAnimation()
+        }
     }
-
-
 
 }
 

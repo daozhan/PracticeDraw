@@ -1,10 +1,18 @@
 package com.dao.practicedraw.widget.likeImage
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 import android.widget.LinearLayout
+import android.graphics.Bitmap
+import android.support.annotation.IdRes
+import android.util.Log
+import com.dao.practicedraw.R
+import kotlinx.android.synthetic.main.activity_main.view.*
+import org.jetbrains.anko.db.REAL
+
 
 /**
  *
@@ -38,34 +46,40 @@ class LikeImageView : View {
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-
         drawImage(canvas)
     }
 
-    fun drawImage(canvas: Canvas?) {
-        val bitmap: Bitmap?
+    private fun drawImage(canvas: Canvas?) {
+        var bitmap: Bitmap? = null
         if (isLike) {
             bitmap = mLikeBitmap
         } else {
             bitmap = mUnLikeBitmap
         }
+        Log.e("dao" , "mLikeBitmap===>$mLikeBitmap")
+        Log.e("dao" , "mUnLikeBitmap===>$mUnLikeBitmap")
+        Log.e("dao" , "bitmap===>$bitmap")
         canvas?.save()
-        canvas?.drawBitmap(bitmap, 0f, 0f, mImagePaint)
+        if (bitmap != null){
+            canvas?.drawBitmap(bitmap, 0f, 0f, mImagePaint)
+        }
         canvas?.restore()
     }
 
     /**
      * 设置点赞图片
      */
-    fun setLikeSrc(likeSrc: Int) {
+    fun setLikeSrc(@IdRes likeSrc: Int) {
         mLikeBitmap = BitmapFactory.decodeResource(resources, likeSrc)
     }
 
     /**
      * 设置点赞取消图片
      */
-    fun setUnLikeSrc(unLikeSrc: Int) {
+    fun setUnLikeSrc(@IdRes unLikeSrc: Int) {
         mUnLikeBitmap = BitmapFactory.decodeResource(resources, unLikeSrc)
+        Log.e("dao" , "setUnLikeSrc mUnLikeBitmap===>$mUnLikeBitmap")
+
     }
 
     /**

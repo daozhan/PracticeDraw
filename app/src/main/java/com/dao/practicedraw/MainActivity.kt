@@ -9,6 +9,7 @@ import com.dao.practicedraw.fragment.*
 import com.dao.practicedraw.widget.tablayout.TabLayout
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     private var mFragments = mutableListOf<Fragment>()
@@ -20,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         // 画颜色
         mFragments.add(DrawColorFragment())
+        // 文字加载动画
+        addItem("文字加载动画", TextLoadingFragment())
         // 点赞效果
         addItem("点赞效果", LikeImageFragment())
         // 触摸反馈

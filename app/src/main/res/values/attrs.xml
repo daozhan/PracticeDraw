@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="LikeView"></declare-styleable>
+    <declare-styleable name="LikeView">
+        <attr name="likeNum" format="integer"/>
+        <attr name="leftPadding" format="dimension"/>
+        <attr name="rightPadding" format="dimension"/>
+        <attr name="middlePadding" format="dimension"/>
+        <attr name="liked" format="boolean"/>
+        <attr name="likeSrc" format="reference"/>
+        <attr name="unlikeSrc" format="reference"/>
+        <attr name="shiningSrc" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextLoadingView">
+        <attr name="text" format="string"/>
+    </declare-styleable>
 </resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.dao.practicedraw.widget.TextLoadingView
+            android:id="@+id/text_loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:text="药实在"/>
+
+    <Button
+            android:id="@+id/start"
+            android:layout_width="@dimen/space_100dp"
+            android:layout_height="@dimen/space_50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="开始"/>
+
+</RelativeLayout>
