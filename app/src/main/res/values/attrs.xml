@@ -12,6 +12,12 @@
     </declare-styleable>
 
     <declare-styleable name="TextLoadingView">
-        <attr name="text" format="string"/>
+        <attr name="loadingText" format="string"/>
+        <attr name="loadingTextSize" format="dimension"/>
+        <attr name="loadingTextBgColor" format="color"/>
+        <attr name="loadingTextTopColor" format="color"/>
+        <attr name="loadingTextAnimationTime" format="integer"/>
+        <attr name="loadingTextLineWidth" format="dimension"/>
+        <attr name="loadingTextOffsetDistance" format="dimension"/>
     </declare-styleable>
 </resources>

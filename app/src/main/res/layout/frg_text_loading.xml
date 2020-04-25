@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+                android:layout_height="match_parent"
+                android:background="@color/gray4"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.dao.practicedraw.widget.TextLoadingView
             android:id="@+id/text_loading_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:text="药实在"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:loadingText="江西省南昌市"
+            app:loadingTextTopColor="@color/theme_color"
+            app:loadingTextBgColor="@color/gray2"
+            app:loadingTextSize="@dimen/space_45dp"
+            app:loadingTextAnimationTime="1500"
+            app:loadingTextLineWidth="@dimen/space_25dp"
+            app:loadingTextOffsetDistance="@dimen/space_35dp"/>
 
     <Button
             android:id="@+id/start"

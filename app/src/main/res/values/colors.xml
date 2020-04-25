@@ -6,7 +6,7 @@
     <color name="colorAccent">@color/theme_color</color>
 
     <!--主题色-->
-    <color name="theme_color">#3AC1AE</color>
+    <color name="theme_color">#4BADE6</color>
     <!--透明-->
     <color name="trans">#00000000</color>
     <!--黑色-->
@@ -44,9 +44,9 @@
     <color name="gray2">#CCCCCC</color>
     <color name="gray3">#DDDDDD</color>
     <color name="gray4">#F5F5F5</color>
-    <color name="gray5">#F3F3F3</color>
+    <color name="gray5">#D1D1D1</color>
     <color name="gray6">#EEEEEE</color>
-    <color name="gray7">#AEAEAE</color>
+    <color name="gray7">#9B9B9B</color>
     <color name="gray8">#F8F8F8</color>
     <color name="gray9">#B1B1B1</color>
     <color name="gray10">#DBDBDB</color>
