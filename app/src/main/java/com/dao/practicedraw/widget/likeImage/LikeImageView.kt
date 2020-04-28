@@ -79,7 +79,6 @@ class LikeImageView : View {
     fun setUnLikeSrc(@IdRes unLikeSrc: Int) {
         mUnLikeBitmap = BitmapFactory.decodeResource(resources, unLikeSrc)
         Log.e("dao" , "setUnLikeSrc mUnLikeBitmap===>$mUnLikeBitmap")
-
     }
 
     /**

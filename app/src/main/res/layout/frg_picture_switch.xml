@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.dao.practicedraw.widget.pictureswitch.PictureSwitchView
+            android:id="@+id/pictureSwitchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:unSelectSrc="@mipmap/tab_home_n"
+            app:selectSrc="@mipmap/tab_home_s"
+            android:layout_centerInParent="true"/>
+
+    <Button
+            android:id="@+id/start"
+            android:layout_width="@dimen/space_100dp"
+            android:layout_height="@dimen/space_50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="开始"/>
+</RelativeLayout>

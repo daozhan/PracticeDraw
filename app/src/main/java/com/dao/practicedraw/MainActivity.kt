@@ -1,5 +1,6 @@
 package com.dao.practicedraw
 
+import android.graphics.Picture
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         // 画颜色
         mFragments.add(DrawColorFragment())
+        // 图片切换动画
+        addItem("图片切换动画", PictureSwitchFragment())
         // 文字加载动画
         addItem("文字加载动画", TextLoadingFragment())
         // 点赞效果
